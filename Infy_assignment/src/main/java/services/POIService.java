@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Retrieves Points of Interest (restaurants, charging stations, etc.)
- * around a location. Actual API calls are not required for this assignment.
+ * around a location.
  */
 public class POIService {
 
@@ -23,7 +23,6 @@ public class POIService {
         // Placeholder external API call
         // In reality, we'd call something like:
         //     List<POI> poiList = externalPoiApi.fetchData(location);
-        // But for the assignment we use dummy data.
 
         List<POI> pois = List.of(
                 new POI("Restaurant A", "Restaurant", location),
@@ -33,4 +32,5 @@ public class POIService {
         store.storePOIResults(location, pois);
         return pois;
     }
+
 }
